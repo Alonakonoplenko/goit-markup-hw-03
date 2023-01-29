@@ -56,6 +56,8 @@ button {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -204,7 +206,7 @@ img {
     line-height: var(--typical-lh);
     color: var(--cornflower-color);
     width: 264px;
-}
+    }
 
 /* For index */
 
@@ -364,9 +366,8 @@ img {
     justify-content: center;
     list-style-type: none;
     gap: 24px;
-    margin-bottom: 72px;
     margin-top: 96px;
-
+    margin-bottom: 72px;
  }
 
 .portfolio-hero-item {
@@ -399,30 +400,31 @@ img {
 }
 
 .projects-list {
+    padding: 0;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
-   
+    margin-top: -48px;
+    margin-left: -24px;
+    margin-bottom: 120px;
 }
 
 .projects-item {
+    flex-basis: calc((100%(24px*2))/3);
     background: var(--white-color);
-    border: 1px solid var(--cornflower-color);
-    flex-basis: calc((100%-48px)/3);
-    column-gap: 24px;
+    outline-offset: -1px;
+    max-width: 360px;
+    margin-top: 48px;
+    margin-left: 24px;
+    
 }
 
 .projects-item-card {
-    width: 360px;
-    margin: 32px 16px;
-    text-align: center;
+    padding-left: 15px;
     border: 1px solid var(--cornflower-color);
 }
 .projects-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 32px;
+    
 }
 
 .projects-title {
@@ -434,11 +436,15 @@ img {
     font-size: 20px;
     color: var(--navy-blue-color);
 
+    margin-top: 32px;
+
+
 }
 
 .projects-text {
     line-height: var(--typical-lh);
     letter-spacing: 0.02em;
     color: var(--slate-color);
+    margin-top: 8px;
     padding-bottom: 32px;
 }
