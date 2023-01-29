@@ -423,6 +423,7 @@ img {
 .projects-item-card {
     padding-left: 15px;
     border: 1px solid var(--cornflower-color);
+    border-top: none;
 }
 .projects-img {
     
